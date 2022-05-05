@@ -28,7 +28,7 @@ const categoryReducer = (state = initialState, action) => {
                 ...state,
                 category: {
                     ...state.category,
-                    loading: false,
+                    loading: true,
                     data: action.data,
                     total: action.total,
                 },

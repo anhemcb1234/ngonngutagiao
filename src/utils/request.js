@@ -23,7 +23,7 @@ const nodeOptions = !isNode
     };
 
 export default function request(path, options = {}) {
-  const url = `${process.env.API_URL}/${path}`;
+  const url = `http://192.168.1.38/api/${path}`;
   return fetch(url, {
     headers: {
       Accept: "application/json",

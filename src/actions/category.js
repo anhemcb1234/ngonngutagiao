@@ -5,10 +5,9 @@ export const getCategory = (offset, page) => ({
     offset,
     page,
 });
-export const getCategorySuccess = (data, total) => ({
+export const getCategorySuccess = (data) => ({
     type: TYPE.GET_CATEGORY_SUCCESS,
     data: data,
-    total: total,
 });
 export const getCategoryError = (errMess) => ({
     type: TYPE.GET_CATEGORY_ERROR,
